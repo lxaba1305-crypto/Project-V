@@ -49,6 +49,12 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #f0f0f0;
@@ -117,8 +123,8 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        position: absolute;
         gap: 0;
+        position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
@@ -135,7 +141,6 @@ body {
         padding: 12px 24px;
     }
 }
-
 /* Hero Section */
 
 #home {
@@ -235,4 +240,62 @@ body {
 .btn-outline:hover {
     border-color: #f5c518;
     color: #f5c518;
+}
+
+/* ===== ABOUT ===== */
+#about {
+    padding: 100px 24px;
+    position: relative;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    color: #f5c518;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 48px;
+}
+
+.about-text p {
+    color: #aaaaaa;
+    line-height: 1.9;
+    font-size: 1rem;
+    max-width: 680px;
+    margin-bottom: 24px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.stat h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #f5c518;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat p {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
